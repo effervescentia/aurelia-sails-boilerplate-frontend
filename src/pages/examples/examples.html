@@ -1,0 +1,20 @@
+<template>
+  <require from="./info-modal"></require>
+
+  <info-modal></info-modal>
+
+  <ul class="nav nav-tabs">
+    <li repeat.for="row of router.navigation" role="presentation" class="${row.isActive ? 'active' : ''}">
+      <a href.bind="row.href">${row.title}</a>
+    </li>
+    <li class="pull-right">
+      <a href="#" data-toggle="modal" data-target="#info-modal">
+        More information about this GUI
+        <i class="fa fa-info-circle"></i>
+      </a>
+    </li>
+  </ul>
+
+  <router-view></router-view>
+
+</template>

@@ -1,0 +1,33 @@
+<template>
+
+  <nav>
+    <ul class="pagination">
+
+      <li>
+        <a href="#" aria-label="Last">
+          <span aria-hidden="true">&lt;&lt;</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&lt;</span>
+        </a>
+      </li>
+
+      <li repeat.for="i of 5"><a href="#">${i + 1}</a></li>
+
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&gt;</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Last">
+          <span aria-hidden="true">&gt;&gt;</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+</template>
